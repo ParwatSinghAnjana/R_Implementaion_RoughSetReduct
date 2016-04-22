@@ -1,13 +1,16 @@
 Function Implemented:-
+
 Two functions are implemented named as
 1.reduct()
 2.entropy()
+
+
 1.reduct():-
 This function compute the reduct set based on the Sequential Backward
-Elimination.
-Initially we consider entire set of conditional attribute as reduct set and compute
+Elimination.Initially we consider entire set of conditional attribute as reduct set and compute
 the entropy for that set with respect to decision attribute by calling entropy()
-function. We called this entropy value as “oldentrp” in our reduct function, and
+function. 
+We called this entropy value as “oldentrp” in our reduct function, and
 if “oldentrp>0” we simply print that “unable to find out reduct because initialentropy is greater then 0”.
 when “oldentrp==0” then we enter into the loop to perform actual reduct
 computation where we first compute the entropy for each individual attribute(to
@@ -26,6 +29,8 @@ when “total attribute(tA)<2” or “newEntopy>0” we break the loop and come
 side the loop.Note:-
 finding out the entropy of individual attribute and removing highest entropy attribute
 from reduct set saves lot of computation time.
+
+
 2.entropy() :-
 Take two arguments 1 st total number of attributes(tA1) and 2 nd dec
 system(dectab1) for which we want to compute the entropy.
@@ -48,6 +53,9 @@ Then add this sum1 value to the variable entp1 which is used to store the entrop
 value
 repeate this for all unique object of cond attribute table and finaly return the entropy
 value(entp1).
+
+
+
 Results:-
 Following is the results of the given decision system in the paper ( Chapter 3 Rough
 Set -Based Feature Selection:A review by Richard Jensen)
